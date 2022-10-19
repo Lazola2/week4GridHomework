@@ -13,11 +13,13 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: 10% repeat(5, 1fr) 10%;
+    grid-template-rows: .5fr repeat(5, 1fr) .5fr;
 }
 
 header,aside,main,footer {
-    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -35,6 +37,10 @@ main {
     background-color: gray;
     grid-column: 3 / span 6;
     grid-row: 2 / span 5;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 footer {
